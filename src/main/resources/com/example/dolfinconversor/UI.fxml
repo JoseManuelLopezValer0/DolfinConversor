@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0"
-      prefWidth="474.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.example.dolfinconversor.UIController">
-    <Button layoutX="206.0" layoutY="174.0" mnemonicParsing="false" text="Convert" onAction="#convert"/>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dolfinconversor.UIController">
+    <Button layoutX="206.0" layoutY="174.0" mnemonicParsing="false" onAction="#convert" text="Convert" />
     <MenuBar prefHeight="25.0" prefWidth="474.0">
         <Menu mnemonicParsing="false" text="File">
-            <MenuItem mnemonicParsing="false" text="Close" onAction="#close"/>
+            <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
-            <MenuItem mnemonicParsing="false" text="About" onAction="#about"/>
+            <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
         </Menu>
     </MenuBar>
-    <TextField editable="false" layoutX="24.0" layoutY="70.0" prefHeight="25.0" prefWidth="344.0" fx:id="inputFilePath"/>
-    <Label layoutX="213.0" layoutY="46.0" text="RVZ File"/>
-    <Label layoutX="214.0" layoutY="104.0" text="ISO File"/>
-    <TextField layoutX="23.0" layoutY="129.0" prefHeight="25.0" prefWidth="344.0" fx:id="outputFilePath"/>
-    <Button layoutX="389.0" layoutY="70.0" mnemonicParsing="false" text="File path" onAction="#openInputFilePath"/>
-    <Button layoutX="389.0" layoutY="129.0" mnemonicParsing="false" text="File path" onAction="#openOutputFilePath"/>
+    <TextField fx:id="inputFilePath" editable="false" layoutX="24.0" layoutY="70.0" prefHeight="25.0" prefWidth="344.0" />
+    <Label layoutX="213.0" layoutY="46.0" text="RVZ File" />
+    <Label layoutX="214.0" layoutY="104.0" text="ISO File" />
+    <TextField fx:id="outputFilePath" layoutX="23.0" layoutY="129.0" prefHeight="25.0" prefWidth="344.0" />
+    <Button layoutX="389.0" layoutY="70.0" mnemonicParsing="false" onAction="#openInputFilePath" text="File path" />
+    <Button layoutX="389.0" layoutY="129.0" mnemonicParsing="false" onAction="#openOutputFilePath" text="File path" />
+   <ProgressIndicator layoutX="408.0" layoutY="167.0" prefHeight="40.0" prefWidth="61.0" progress="0.0" fx:id="progressIndicator" />
 </Pane>
