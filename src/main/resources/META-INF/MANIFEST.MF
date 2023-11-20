@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Main-Class: com.example.dolfinconversor.Launcher
+Class-Path: javafx-graphics-21-ea+24.jar controlsfx-11.1.2.jar toolboxfx
+ -17.0.33.jar util-4.0.13.jar fxgl-17.2.jar javafx-media-21-ea+24-win.ja
+ r tilesfx-17.1.17.jar javafx-base-21-ea+24.jar ikonli-javafx-12.3.1.jar
+  annotations-13.0.jar kotlin-stdlib-common-1.6.0.jar javafx-web-21-ea+2
+ 4.jar validatorfx-0.4.0.jar javafx-controls-21-ea+24.jar formsfx-core-1
+ 1.6.0.jar javafx-fxml-21-ea+24.jar heatmap-17.0.12.jar storage-4.0.13.j
+ ar fxgl-gameplay-17.2.jar javafx-base-21-ea+24-win.jar javafx-graphics-
+ 21-ea+24-win.jar javafx-web-21-ea+24-win.jar jackson-core-2.12.1.jar fx
+ gl-io-17.2.jar javafx-controls-21-ea+24-win.jar jackson-databind-2.12.1
+ .jar javafx-fxml-21-ea+24-win.jar ikonli-core-12.3.1.jar bootstrapfx-co
+ re-0.4.0.jar countries-17.0.23.jar audio-4.0.13.jar fxgl-scene-17.2.jar
+  javafx-media-21-ea+24.jar fxgl-core-17.2.jar kotlin-stdlib-1.6.0-modul
+ ar.jar jackson-annotations-2.12.1.jar toolbox-17.0.35.jar lifecycle-4.0
+ .13.jar fxgl-entity-17.2.jar
+
